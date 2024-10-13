@@ -50,7 +50,6 @@ header h1 {
     color: #FFCB05;
     font-size: 1.25rem;
     margin: 0;
-    font-optical-sizing: auto;
     font-weight: 800;
     justify-items: start;
 }
@@ -142,7 +141,6 @@ main {
     color: #00274C;
     font-size: 1.25rem;
     margin: 0;
-    font-optical-sizing: auto;
     font-weight: 800;
     text-align: center;
     background-color: #FFCB05;
@@ -284,7 +282,7 @@ article figcaption{
     padding: 1rem;
     margin: 1.25rem 0;
     border-radius: 8px;
-    box-shadow: 0 4px 8px #000000(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .box h4 {
@@ -342,7 +340,6 @@ footer a:hover {
     color: #00274C;
     font-size: 18px;
     margin: 0;
-    font-optical-sizing: auto;
     font-weight: 800;
     text-align: center;
     background-color: #FFCB05;
@@ -406,7 +403,7 @@ footer a:hover {
     background-color: #eeeeee;
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 4px 8px #000000(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .study li {
@@ -460,7 +457,6 @@ footer a:hover {
     color: #00274C;
     font-size: 20px;
     margin: 0;
-    font-optical-sizing: auto;
     font-weight: 800;
     text-align: center;
     border: 4px solid #FFCB05;
@@ -515,7 +511,7 @@ footer a:hover {
     background-color: #eeeeee;
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 4px 8px #000000(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gen2 li {
@@ -577,7 +573,6 @@ footer a:hover {
     color: #00274C;
     font-size: 1.25rem;
     margin: 0;
-    font-optical-sizing: auto;
     font-weight: 800;
     text-align: center;
     border: 4px solid #FFCB05;
