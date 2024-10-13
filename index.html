@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Student Success Portal</title>
 </head>
 <body>
-    <a href = "#main">Skip to Main Content</a>
+    <a href = "#main" class="skip">Skip to Main Content</a>
     <header>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
+        <h1>Student Success Portal</h1>
+        <div class="header">
+            <label for="toggle" class="toggleBtn">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul class="navbar">
+                <li><a href = "index.html" class="active" aria-current="page">Home</a></li>
                 <li><a href = "Study_Spaces.html">Study Spaces on Campus</a></li>
                 <li><a href = "First_Gen.html">First Gen</a></li>
                 <li><a href = "Food_Pantry.html">Food Pantry</a></li>
             </ul>
-        </nav>
-        <h1>Student Success Portal</h1>
-
+        </div>
     </header>
     <main id="main">
-        <section>
-            <h2>Welcome to the UM Grad Success Navigator</h2>
-            <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
-            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
+        <section class="success">
+            <h1>UM Grad Success Navigator</h1>
+            <p>This guide is set up to help you be successul inside and outside of the classroom.</p>
+            <img src="images/rack.png" alt="UM Clock Tower">
             <ol>
-                <li><a href = "Study_Spaces.html">Study Spaces on Campus</a></li>
+                <li><a href = "Study_Spaces.html">Study Spaces</a></li>
                 <li><a href = "First_Gen.html">First Gen</a></li>
                 <li><a href = "Food_Pantry.html">Food Pantry</a></li>
             </ol>
         </section>
+        <hr>
         <section>
-            <h2>Comfort on Campus</h2>
+            <h2>Study Spaces on Campus</h2>
             <p>Finding comfortable places to study on campus is key to staying focused and feeling relaxed, which makes it easier to get things done and enjoy your study time more.</p>
             <article>
-                <h3>Study Spaces on Campus</h3>
                 <figure>
                     <img src="images/MCOMMONS-DSC01659.jpg" width="1000" alt="Students study for exams in a crowded Hatcher Reference Room.">  <!-- Description and photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
                     <figcaption>Hatcher Library Study Space</figcaption>
@@ -45,9 +49,8 @@
             </article>
         </section>
         <section>
-            <h2>First Gen Focus</h2>
+            <h2>First Generation Students</h2>
             <article>
-                <h3>First Generation Students</h3>
                 <p>Are you a first-generation college student? Being a first-generation student comes with its own unique challenges, but finding the right guidance and support can help you feel more confident and connected throughout your college journey.</p>
                 <figure>
                     <img src="images/first_gen_tshirts.png" width="1000" alt="A group of students all holding up t-shirts that say 'Michigan First-Gens'."> <!-- Photo from the umich First-Gen website https://firstgen.umich.edu/-->
@@ -57,9 +60,8 @@
             </article>
         </section>
         <section>
-            <h2>U-M Nourishment</h2>
+            <h2>The Maize & Blue Cupboard</h2>
             <article>
-                <h3>The Maize & Blue Cupboard</h3>
                 <p>Maize & Blue Cupboard is a resource created to help U-M students, staff, and faculty access healthy, nutritious food. Whether you're in need of groceries, kitchen tools, or cooking tips, the pantry is here to ensure you have everything you need to eat well and feel supported.</p>
                 <figure>
                     <img src="images/pantry_collage.png" width="1000" alt="A collage of the different foods, pantry items, and set-up of the Maise & Blue Cupboard."> <!-- Photo from the Maize & Blue Cupboard website https://mbc.studentlife.umich.edu/-->
@@ -68,32 +70,45 @@
                 <p>The pantry serves as a key resource for your well-being, offering both essential nourishment and a connection to a supportive network within the U-M community.</p>
             </article>
         </section>
-        <section>
+        <hr>
+        <section class="mental-health">
             <h2>Prioritizing Mental Health</h2>
-            <p>Prioritizing mental health is crucial for student success, and the following section will provide valuable resources and support to help students maintain their well-being."</p>
+            <p>Prioritizing mental health is crucial for student success, and the following section will provide valuable resources and support to help students maintain their well-being.</p>
             <article>
                 <h3>Essential Mental Health Resources for Students</h3>
-                    <h4>U-M Counseling & Psychological Services (CAPS) <a href="https://caps.umich.edu/">Explore Here </a></h4>
+                <div class="box">
+                    <h4>U-M Counseling & Psychological Services (CAPS) <a href="https://caps.umich.edu/"> <br> Explore Here </a></h4>
                     <ul>
                         <li>CAPS offers free, confidential services for U-M students including short-term counseling for individual students or couples.</li>  <!-- ^ Description from the umich CAPS website: https://caps.umich.edu/ -->
-                        <li>For urgent concerns, walk-in services and 24-hour phone support (call 734-764-8312)</li>
+                    <div class="contact-info">
+                        <li>For urgent concerns, walk-in services and 24-hour phone support Call: 734-764-8312</li>
+                    </div>
                     </ul>
+                </div>
+                <div class="box">
                     <h4>U-M Center for the Child and Family  <a href="https://mari.umich.edu/uccf">Explore Here </a> </h4>
                     <ul>
                         <li>The Center for the Child and Family provides a comprehensive range of mental health services for children and families, including support for learning disabilities, social skills, evaluations and assessments, IQ testing, ADHD evaluations, emotional and behavioral concerns, parenting, grief and loss, and relationship issues for marriage and couples.</li>
+                    <div class="contact-info">
                         <li>Vist us at: 210 S. 5th Ave., Ann Arbor, MI 48104.</li>
-                        <li>Call us at:734-615-7853.</li>
+                        <li>Call us at: 734-615-7853.</li>
+                    </div>
                     </ul>
+                </div>
+                <div class="box">
                     <h4>U-M University Health Service (UHS) <a href="https://uhs.umich.edu/mentalhealthsvcs">Explore Here </a></h4>
                     <ul>
                         <li>UHS offers medication management for common mental health concerns</li>
-                        <li>Call us at:734-764-8320</li>
+                    <div class="contact-info">
+                        <li>Call us at: 734-764-8320</li>
+                    </div>
                     </ul>
+                </div>
             </article>
         </section>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <p>UMSI Student Care Support | <a href="https://www.si.umich.edu/student-experience/academic-success/umsi-student-care-report-and-student-support-resources">Contact Us </a></p>
+    </footer>
 </body>
 </html>

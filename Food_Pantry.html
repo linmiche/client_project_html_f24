@@ -3,62 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Maize & Blue Cupboard</title>
 </head>
 <body>
-    <a href="#main">Skip to Main Content</a>
+    <a href = "#main" class="skip">Skip to Main Content</a>
     <header>
-        <img src="images/mbc_image.png" alt="Maize & Blue Pantry Logo"> <!--Photo from the Maize & Blue Pantry Webstie: https://mbc.studentlife.umich.edu/ -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Study_Spaces.html">Study Spaces on Campus</a></li>
-                <li><a href="First_Gen.html">First Gen</a></li>
-                <li><a href="Food_Pantry.html">Food Pantry</a></li>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="Maize & Blue Pantry Logo"> <!--Photo from the Maize & Blue Pantry Webstie: https://mbc.studentlife.umich.edu/ -->
+        <h1>Maize & Blue Cupboard</h1>
+        <div class="header">
+            <label for="toggle" class="toggleBtn">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul class="navbar">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "Study_Spaces.html">Study Spaces on Campus</a></li>
+                <li><a href = "First_Gen.html">First Gen</a></li>
+                <li><a href = "Food_Pantry.html" class="active" aria-current="page">Food Pantry</a></li>
             </ul>
-        </nav>
-        <h1>Welcome to the Maize & Blue Cupboard</h1>
+        </div>
     </header>
     <main id="main">
-        <section>
-            <h2>Our Mission:</h2>
-            <p>To ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others.</p> <!--Description from the U-M Maize & Blue Cupboard Webstie: https://mbc.studentlife.umich.edu/ -->
+        <section class="pantry1">
+            <h1>Maize & Blue Cupboard</h1>
+            <p>Our Mission is to ensure members of the University of Michigan community receive equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others.</p> <!--Description from the U-M Maize & Blue Cupboard Webstie: https://mbc.studentlife.umich.edu/ -->
             <figure>
                 <img src="images/FullCircleToteAlly-HERO.webp" width="1000" alt="Bag of groceries on a table with groceries sitting around the bag as well."> <!--Photo from the Epicurious Website https://www.epicurious.com/shopping/my-search-for-the-best-reusable-grocery-bag-is-over-article -->
             </figure>
         </section>
-        <section>
+        <hr>
+        <section class="pantry2">
             <article>
-                <h2>What we provide:</h2>
-                <ul>
-                    <li>Food
+                <h2>What We Provide:</h2>
+                    <h3>Food</h3>
                         <ul>
                             <li>Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e. rice, cans, tuna, etc.)</li>
                         </ul>
-                    </li>
-                    <li>Kitchen & Cooking
+                    <h3>Kitchen & Cooking</h3>
                         <ul>
                             <li>Dishes, silverware, pots & pans, Tupperware, cutting boards, knives, and other kitchenware</li>
                         </ul>
-                    </li>
-                    <li>Personal & Household
+                    <h3>Personal & Household</h3>
                         <ul>
                             <li>Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more</li>
                         </ul>
-                    </li>
-                    <li>Support
+                    <h3>Support</h3>
                         <ul>
                             <li>Get connected to campus experts like CAPS, Dean of Students and Financial Aid, as well as SNAP (Michigan’s food program)</li>
                         </ul>
-                    </li>
-                </ul>
                 <!--Info from the Maize & Blue Pantry Website: https://mbc.studentlife.umich.edu/ -->
+        <hr>
+            <div class="pantry2-2">
                 <h2>How to Shop</h2>
                 <p>Shopping at the Maize and Blue Cupboard is by appointment only.</p>
                 <p>Please make an appointment by visiting our sign-up page <a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2024-09">here.</a></p>
+            </div>
             </article>
         </section>
-        <section>
+        <section class="pantry3">
             <h2>Location:</h2>
             <p>Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance only to ensure privacy for residents. Please contact us if you need ramp or elevator access.</p> <!--Info from the U-M Maize & Blue Cupboard Webstie: https://mbc.studentlife.umich.edu/ -->
             <ul>
@@ -66,14 +69,18 @@
                 <li>Phone: 734-936-2794</li>
             </ul>
             <h2>Hours:</h2>
-            <p>On Monday 10/30 the Maize and Blue Cupboard will transition to shopping by appointment only. Schedule your shopping appointment <a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2024-09">here.</a></p>
+            <p>On Monday 10/30 the Maize and Blue Cupboard will transition to shopping by appointment only.</p>
+            <div class="schedule">
+                <p>Schedule your shopping appointment <a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2024-09">here.</a></p>
+            </div>
             <figure>
                 <img src="images/XP2S1650.jpg" width="1000" alt="Betsy Barbour Residence Hall."> <!--Photo from the U-M Campus Map Website https://maps.studentlife.umich.edu/building/betsy-barbour-house -->
+                <figcaption>Betsy Barbour Residence Hall</figcaption>
             </figure>
         </section>
     </main>
     <footer>
-        <p><a href="https://mbc.studentlife.umich.edu/contact/">Contact Us</a></p>
+        <p>UMSI Student Care Support | <a href="https://www.si.umich.edu/student-experience/academic-success/umsi-student-care-report-and-student-support-resources">Contact Us </a></p>
     </footer>
 </body>
 </html>

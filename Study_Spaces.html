@@ -3,61 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Study Spaces on Campus</title>
 </head>
 <body>
-    <a href="#main">Skip to Main Content</a>
+    <a href = "#main" class="skip">Skip to Main Content</a>
     <header>
-        <img src="images/UM Study Spaces Logo.png" alt="UM Study Spaces Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Study_Spaces.html">Study Spaces on Campus</a></li>
-                <li><a href="First_Gen.html">First Gen</a></li>
-                <li><a href="Food_Pantry.html">Food Pantry</a></li>
-            </ul>
-        </nav>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UM Study Spaces Logo">
         <h1>Study Spaces at U-M</h1>
+        <div class="header">
+            <label for="toggle" class="toggleBtn">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul class="navbar">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "Study_Spaces.html" class="active" aria-current="page">Study Spaces on Campus</a></li>
+                <li><a href = "First_Gen.html">First Gen</a></li>
+                <li><a href = "Food_Pantry.html">Food Pantry</a></li>
+            </ul>
+        </div>
     </header>
     <main id="main">
-        <section>
-            <h2>Welcome to Study Spaces at U-M!</h2>
-            <p>At the University of Michigan, Study Spaces is here to help you easily find and reserve study areas, computer stations, or quiet spots for remote classes.
-            While some spaces may still require reservations, many are now available for walk-in use.</p>
-            <p>As we move into the new academic year, you’ll find both reservable and open study spaces across campus,
-            including the Library's mix of walk-in and bookable areas. This site aims to guide you to the most suitable options for your study needs,
-            though it may not include every available space on campus.</p>
+        <section class="study">
+            <h1>Welcome to Study Spaces at U-M!</h1>
+            <p>At the University of Michigan, Study Spaces is here to help you easily find and reserve study areas, computer stations, or quiet spots for remote classes.</p>
+            <div class="study-head1">
+                <p>While some spaces may still require reservations, many are now available for walk-in use.</p>
+            </div>
+            <div class="study-head2">
+                <p>This site aims to guide you to the most suitable options for your study needs,
+                though it may not include every available space on campus.</p>
+            </div>
+            <div class="study-img1">
+                <img src="images/1245372.png" alt="Cartoon of a book coming out of a computer.">
+                <img src="images/1245372.png" alt="Cartoon of a book coming out of a computer.">
+                <img src="images/1245372.png" alt="Cartoon of a book coming out of a computer.">
+                <img src="images/1245372.png" alt="Cartoon of a book coming out of a computer.">
+                <img src="images/1245372.png" alt="Cartoon of a book coming out of a computer.">
+            </div>
+            <hr>
             <article>
-                <h3>Explore Available Study Spaces</h3>
-                    <p>Explore the different available study spaces on U-M's campus. From options on North Campus to the Libraries, find a space that's perfect for you. Space reservations are available for open spaces, but many have walk-in availabilities as well.</p>
-                    <p>While you peruse, keep these points in mind for each space:</p>
-                    <ul>
-                        <li>This site is not an exhaustive list of study spaces.</li>
-                        <li>Many campus spaces are back to full availability.</li>
-                        <li>The Library offers both walk-in and reservable spaces, such as 1st-floor tables and 2nd-floor rooms. The Library provides a mix of walk-in and bookable areas.</li>
-                    </ul>
-                <h3>Available Study Spaces:</h3>
-                    <h4>North Campus Spaces:<a href="https://umich-nc.libcal.com/">Reserve Here.</a></h4>
-                    <figure>
-                        <img src="images/North Campus.jpg" width="1000" alt="U-M's North Campus.">  <!-- Photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
-                        <figcaption>North Campus</figcaption>
-                    </figure>
-                    <h4>U-M Library Spaces:<a href="https://umich.libcal.com/">Reserve Here.</a></h4>
-                    <figure>
-                        <img src="images/Hatcher-4.jpg.jpg" width="1000" alt="The Front of the Hatcher Graduate Library.">  <!-- Photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
-                        <figcaption>U-M Hatcher Graduate Library</figcaption>
-                    </figure>
-                    <h4>Detroit Center:<a href="https://umich-cc.libcal.com/reserve/dc">Reserve Here.</a></h4>
-                    <figure>
-                        <img src="images/Detroit Center.jpg" width="1000" alt="The U-M Detroit Center.">  <!-- Photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
-                        <figcaption>U-M Detroit Center</figcaption>
-                    </figure>
+                <div class="study-heading">
+                    <h3>Explore Available Study Spaces</h3>
+                        <p>Explore the different available study spaces on U-M's campus. <br> Space reservations are available for open spaces, but many have walk-in availabilities as well.</p>
+                        <div class="study-head3">
+                            <p>While you peruse, keep these points in mind for each space:</p>
+                        </div>
+                        <ul>
+                            <li>This site is not an exhaustive list of study spaces.</li>
+                            <li>Many campus spaces are back to full availability.</li>
+                            <li>The Library offers both walk-in and reservable spaces, such as 1st-floor tables and 2nd-floor rooms. The Library provides a mix of walk-in and bookable areas.</li>
+                        </ul>
+                </div>
+                <hr>
+                <div class="study-head4">
+                    <h3>Available Study Spaces:</h3>
+                        <h4>North Campus Spaces:<a href="https://umich-nc.libcal.com/"> Reserve Here.</a></h4>
+                        <figure>
+                            <img src="images/North Campus.jpg" width="1000" alt="U-M's North Campus.">  <!-- Photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
+                            <figcaption>North Campus</figcaption>
+                        </figure>
+                        <hr class="dashed-line">
+                        <h4>U-M Library Spaces:<a href="https://umich.libcal.com/"> Reserve Here.</a></h4>
+                        <figure>
+                            <img src="images/Hatcher-4.jpg.jpg" width="1000" alt="The Front of the Hatcher Graduate Library.">  <!-- Photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
+                            <figcaption>U-M Hatcher Graduate Library</figcaption>
+                        </figure>
+                        <hr class="dashed-line">
+                        <h4>Detroit Center:<a href="https://umich-cc.libcal.com/reserve/dc"> Reserve Here.</a></h4>
+                        <figure>
+                            <img src="images/Detroit Center.jpg" width="1000" alt="The U-M Detroit Center.">  <!-- Photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
+                            <figcaption>U-M Detroit Center</figcaption>
+                        </figure>
+                </div>
                 <p>Study Spaces at U-M is a tool designed to help you find and reserve designated study spaces, computer stations, a space for you to take a remote class, or just a dedicated quiet touchdown spot between classes.</p>
                 <!-- ^ Description from the umich study spaces website: https://studyspaces.umich.edu/ -->
             </article>
         </section>
+    </main>
     <footer>
-        <p>How to Reserve Study Spaces: <a href="https://studyspaces.umich.edu/reserve-study-space">Click Here.</a></p>
+        <p>UMSI Student Care Support | <a href="https://www.si.umich.edu/student-experience/academic-success/umsi-student-care-report-and-student-support-resources">Contact Us </a></p>
     </footer>
 </body>
 </html>
