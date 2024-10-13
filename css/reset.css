@@ -103,7 +103,7 @@ meter {
 }
 
 /* Revert Modal native behavior */
-:where(dialog:modal) {
+:where(dialog) {
     all: revert;
     box-sizing: border-box;
 }
