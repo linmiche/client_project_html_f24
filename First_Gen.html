@@ -27,12 +27,21 @@
     <main id="main">
         <section class="gen">
             <div class="gen-head1">
-                <h1>Am I a first-generation college student?</h1>
+                <h1>Am I a First-Generation College Student?</h1>
             </div>
                 <p>At the University of Michigan, undergraduates and graduate students are considered first-generation college students if:</p>
             <div class="gen-head2">
-                <p>neither parent nor guardian has completed a 4-year college or university degree.</p> <!-- Description from the U-M First Generation Website: https://firstgen.umich.edu/ -->
+                <p>Neither parent nor guardian has completed a 4-year college or university degree.</p> <!-- Description from the U-M First Generation Website: https://firstgen.umich.edu/ -->
             </div>
+            <form action="https://formspree.io/f/xdkogzwe" method="post">
+                <h1>Sign-Up for First-Gen Emails
+                </h1>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <input type="submit" value="Submit" class="submit">
+              </form>
+
                 <figure>
                 <img src="images/Campus-Events-top-image-1-e1635196009973.jpg" width="1000" alt="Students holding up a '1st Gen' badge.">  <!-- Photo from the U-M DEI Website: https://odei.umich.edu/2021/11/01/first-generation-student-week-to-celebrate-accomplishments-challenges/ -->
                 <figcaption>Celebrating 1st Gen Students!</figcaption>
@@ -48,7 +57,6 @@
 
                 <div class="gen-head3">
                     <p>Gateway is open during regular business hours (8 AM-5 PM). You can use the space for:</p>
-                </div>
                 <ul>
                     <li>Finding resources for first-generation students</li>
                     <li>Connecting to partner offices that support first-generation students</li>
@@ -61,6 +69,7 @@
                     <img src="images/FGWebsite-Pic-1-scaled.jpg" width="1000" alt="Three U-M students proudly holding their First Generation T-shirts."> <!-- Photo from the U-M First Gen Website: https://firstgen.umich.edu/gateway/ -->
                     <figcaption>Proud to be U-M First Gen!</figcaption>
                 </figure>
+                </div>
             </article>
         </section>
         <hr>
@@ -84,6 +93,10 @@
     </main>
     <footer>
         <p>UMSI Student Care Support | <a href="https://www.si.umich.edu/student-experience/academic-success/umsi-student-care-report-and-student-support-resources">Contact Us </a></p>
+        <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

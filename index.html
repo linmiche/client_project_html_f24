@@ -34,12 +34,22 @@
                 <li><a href = "First_Gen.html">First Gen</a></li>
                 <li><a href = "Food_Pantry.html">Food Pantry</a></li>
             </ol>
+            <div class="vertical-line"></div>
+            <form action="https://formspree.io/f/xdkogzwe" method="post">
+                <h1>I would like to receive information about UMSI</h1>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="Submit" class="submit">
+            </form>
         </section>
         <hr>
-        <section>
+        <section class="home_section">
             <h2>Study Spaces on Campus</h2>
-            <p>Finding comfortable places to study on campus is key to staying focused and feeling relaxed, which makes it easier to get things done and enjoy your study time more.</p>
             <article>
+                <p>Finding comfortable places to study on campus is key to staying focused and feeling relaxed, which makes it easier to get things done and enjoy your study time more.</p>
                 <figure>
                     <img src="images/MCOMMONS-DSC01659.jpg" width="1000" alt="Students study for exams in a crowded Hatcher Reference Room.">  <!-- Description and photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
                     <figcaption>Hatcher Library Study Space</figcaption>
@@ -48,7 +58,7 @@
                 <!-- ^ Description from the umich study spaces website: https://studyspaces.umich.edu/ -->
             </article>
         </section>
-        <section>
+        <section class="home_section">
             <h2>First Generation Students</h2>
             <article>
                 <p>Are you a first-generation college student? Being a first-generation student comes with its own unique challenges, but finding the right guidance and support can help you feel more confident and connected throughout your college journey.</p>
@@ -59,7 +69,7 @@
                 <p>We hope this site helps you open doors and connect with U-M’s community of first-generation students and those who will support and encourage you throughout your journey</p>
             </article>
         </section>
-        <section>
+        <section class="home_section">
             <h2>The Maize & Blue Cupboard</h2>
             <article>
                 <p>Maize & Blue Cupboard is a resource created to help U-M students, staff, and faculty access healthy, nutritious food. Whether you're in need of groceries, kitchen tools, or cooking tips, the pantry is here to ensure you have everything you need to eat well and feel supported.</p>
@@ -77,7 +87,7 @@
             <article>
                 <h3>Essential Mental Health Resources for Students</h3>
                 <div class="box">
-                    <h4>U-M Counseling & Psychological Services (CAPS) <a href="https://caps.umich.edu/"> <br> Explore Here </a></h4>
+                    <h4>U-M Counseling & Psychological Services (CAPS) <a href="https://caps.umich.edu/">Explore Here </a></h4>
                     <ul>
                         <li>CAPS offers free, confidential services for U-M students including short-term counseling for individual students or couples.</li>  <!-- ^ Description from the umich CAPS website: https://caps.umich.edu/ -->
                         <li class="contact-info">For urgent concerns, walk-in services and 24-hour phone support Call: 734-764-8312</li>
@@ -103,6 +113,10 @@
     </main>
     <footer>
         <p>UMSI Student Care Support | <a href="https://www.si.umich.edu/student-experience/academic-success/umsi-student-care-report-and-student-support-resources">Contact Us </a></p>
+        <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

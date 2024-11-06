@@ -55,23 +55,63 @@
                             <li>Many campus spaces are back to full availability.</li>
                             <li>The Library offers both walk-in and reservable spaces, such as 1st-floor tables and 2nd-floor rooms. The Library provides a mix of walk-in and bookable areas.</li>
                         </ul>
+
+                        <form id="availabilityForm" onsubmit="return showConfirmation(event)">
+                            <h3>Check Study Space Availability</h3>
+
+                            <label for="date">Select Date:</label>
+                            <input type="date" id="date" name="date" required><br><br>
+
+                            <label for="time">Select Time:</label>
+                            <input type="time" id="time" name="time" required><br><br>
+
+                            <label for="location">Select Location:</label>
+                            <select id="location" name="location" required>
+                                <option value="">--Select a Location--</option>
+                                <option value="hatcher_library">North Campus</option>
+                                <option value="duderstadt_center">U-M Library Spaces</option>
+                                <option value="shapiro_library">Detroit Center</option>
+                            </select><br><br>
+
+                            <label for="capacity">Number of People:</label>
+                            <input type="number" id="capacity" name="capacity" min="1" required><br><br>
+
+                            <input type="submit" value="Check Availability" class="submit">
+                        </form>
+                        <div id="confirmationMessage" class="confirm">
+                            <div class="study-form">
+                                <span class="close-btn" onclick="closeConfirmation()">&times;</span>
+                                <p>This is Available!</p>
+                            </div>
+                        </div>
+                        <script>
+                            function showConfirmation(event) {
+                                event.preventDefault();
+                                document.getElementById("confirmationMessage").style.display = "block";
+                                document.getElementById("availabilityForm").reset();
+                                return false;
+                            }
+                            function closeConfirmation() {
+                                document.getElementById("confirmationMessage").style.display = "none";
+                            }
+                        </script>
                 </div>
                 <hr>
                 <div class="study-head4">
                     <h2>Available Study Spaces:</h2>
-                        <h3>North Campus Spaces:<a href="https://umich-nc.libcal.com/"> Reserve Here.</a></h3>
+                        <h3 class="north-campus">North Campus Spaces:<a href="https://umich-nc.libcal.com/"> Reserve Here.</a></h3>
                         <figure>
                             <img src="images/North_Campus.jpg" width="1000" alt="U-M's North Campus.">  <!-- Photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
                             <figcaption>North Campus</figcaption>
                         </figure>
                         <hr class="dashed-line">
-                        <h3>U-M Library Spaces:<a href="https://umich.libcal.com/"> Reserve Here.</a></h3>
+                        <h3 class="library-spaces">U-M Library Spaces:<a href="https://umich.libcal.com/"> Reserve Here.</a></h3>
                         <figure>
                             <img src="images/Hatcher-4.jpg.jpg" width="1000" alt="The Front of the Hatcher Graduate Library.">  <!-- Photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
                             <figcaption>U-M Hatcher Graduate Library</figcaption>
                         </figure>
                         <hr class="dashed-line">
-                        <h3>Detroit Center:<a href="https://umich-cc.libcal.com/reserve/dc"> Reserve Here.</a></h3>
+                        <h3 class="detroit-center">Detroit Center:<a href="https://umich-cc.libcal.com/reserve/dc"> Reserve Here.</a></h3>
                         <figure>
                             <img src="images/Detroit_Center.jpg" width="1000" alt="The U-M Detroit Center.">  <!-- Photo from the umich digital asset portal https://digitalassets.umich.edu/portals/djppo6wi/SI539AssetPortal -->
                             <figcaption>U-M Detroit Center</figcaption>
@@ -84,6 +124,10 @@
     </main>
     <footer>
         <p>UMSI Student Care Support | <a href="https://www.si.umich.edu/student-experience/academic-success/umsi-student-care-report-and-student-support-resources">Contact Us </a></p>
+        <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

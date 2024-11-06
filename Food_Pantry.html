@@ -31,6 +31,35 @@
             <figure>
                 <img src="images/FullCircleToteAlly-HERO.webp" width="1000" alt="Bag of groceries on a table with groceries sitting around the bag as well."> <!--Photo from the Epicurious Website https://www.epicurious.com/shopping/my-search-for-the-best-reusable-grocery-bag-is-over-article -->
             </figure>
+            <form id="availabilityForm" onsubmit="return showConfirmation(event)">
+                <h3>Check Pantry Appointment Availability</h3>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required><br><br>
+
+                <input type="submit" value="Check Availability" class="submit">
+            </form>
+
+            <div id="confirmationMessage" class="confirm">
+                <div class="study-form">
+                    <span class="close-btn" onclick="closeConfirmation()">&times;</span>
+                    <p>This is Available!</p>
+                </div>
+            </div>
+            <script>
+                function showConfirmation(event) {
+                    event.preventDefault();
+                    document.getElementById("confirmationMessage").style.display = "block";
+                    document.getElementById("availabilityForm").reset();
+                    return false;
+                }
+                function closeConfirmation() {
+                    document.getElementById("confirmationMessage").style.display = "none";
+                }
+            </script>
         </section>
         <hr>
         <section class="pantry2">
@@ -81,6 +110,10 @@
     </main>
     <footer>
         <p>UMSI Student Care Support | <a href="https://www.si.umich.edu/student-experience/academic-success/umsi-student-care-report-and-student-support-resources">Contact Us </a></p>
+        <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

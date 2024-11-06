@@ -1,0 +1,13 @@
+<header>
+    <div class="header">
+        <h1 class="logo">Student Success Portal</h1>
+        <label for="toggle" class="toggleBtn">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <ul class="navbar">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="academic.html">Academic</a></li>
+            <li class="item"><a href="health.html ">Health</a></li>
+            <li class="item"><a href="tutor.html">Tutor</a></li>
+        </ul>
+    </div>
+</header>
