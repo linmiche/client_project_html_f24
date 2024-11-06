@@ -1217,7 +1217,6 @@ article p:nth-child(n + 3){
 .gen{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 20px 40px 40px 20px;
     column-gap: 100px;
 }
 
@@ -1350,7 +1349,6 @@ article p:nth-child(n + 3){
 .pantry1{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
 }
@@ -1557,8 +1555,8 @@ article p:nth-child(n + 3){
 .error-container{
     display: grid;
     grid-column: 1fr 1fr 1fr 1fr;
-    grid-row: 1fr 1fr;
 }
+
 .error-container img{
     width: 200px;
     grid-column: 2;
