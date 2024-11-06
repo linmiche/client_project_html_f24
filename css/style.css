@@ -1554,7 +1554,6 @@ article p:nth-child(n + 3){
 
 .error-container{
     display: grid;
-    grid-column: 1fr 1fr 1fr 1fr;
 }
 
 .error-container img{
