@@ -614,6 +614,7 @@ footer a:hover {
 
 .pantry1 form h2{
     font-weight: bold;
+    color: #00274C;
 }
 
 .pantry1 form label{
@@ -1393,6 +1394,7 @@ article p:nth-child(n + 3){
 
 .pantry1 form h2{
     font-weight: bold;
+    color: #00274C;
     background-color: #ffffff;
     border-radius: 0.5rem;
     padding: 5px;
