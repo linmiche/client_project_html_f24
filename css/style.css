@@ -1562,10 +1562,8 @@ article p:nth-child(n + 3){
     width: 200px;
     grid-column: 2;
     grid-row: 1 / span 2;
-    justify-self: end;
-    align-self: end;
     margin-top: 290px;
-    margin-left: 200px;
+    margin-left: -100px;
 }
 
 .error-container h1{
@@ -1575,7 +1573,7 @@ article p:nth-child(n + 3){
     width: 100%;
     white-space: nowrap;
     margin-top: 320px;
-    margin-left: 30px;
+    margin-left: -180px;
     font-size: 40px;
 }
 
@@ -1586,8 +1584,8 @@ article p:nth-child(n + 3){
     width: 100%;
     white-space: nowrap;
     margin-top: 380px;
-    margin-left: 30px;
-    font-size: 30px;
+    margin-left: -180px;
+    font-size: 28px;
 }
 
 .error-container a{
@@ -1598,7 +1596,7 @@ article p:nth-child(n + 3){
     width: 100%;
     white-space: nowrap;
     margin-top: 450px;
-    margin-left: 30px;
+    margin-left: -180px;
     font-size: 20px;
 }
 
