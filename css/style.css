@@ -1551,6 +1551,8 @@ article p:nth-child(n + 3){
 
 /* 404 page*/
 .error-page{
+    all: initial;
+    font-family: 'Montserrat', sans-serif;
     background-color: #00274C;
 }
 
@@ -1563,7 +1565,7 @@ article p:nth-child(n + 3){
     grid-column: 2;
     grid-row: 1 / span 2;
     margin-top: 290px;
-    margin-left: -100px;
+    margin-left: 180px;
 }
 
 .error-container h1{
@@ -1573,7 +1575,7 @@ article p:nth-child(n + 3){
     width: 100%;
     white-space: nowrap;
     margin-top: 320px;
-    margin-left: -180px;
+    margin-left: -200px;
     font-size: 40px;
 }
 
@@ -1584,7 +1586,7 @@ article p:nth-child(n + 3){
     width: 100%;
     white-space: nowrap;
     margin-top: 380px;
-    margin-left: -180px;
+    margin-left: -200px;
     font-size: 28px;
 }
 
@@ -1596,7 +1598,7 @@ article p:nth-child(n + 3){
     width: 100%;
     white-space: nowrap;
     margin-top: 450px;
-    margin-left: -180px;
+    margin-left: -200px;
     font-size: 20px;
 }
 
